@@ -1,4 +1,4 @@
-package main
+package abstractfactory
 
 import "fmt"
 
@@ -221,7 +221,7 @@ func PrintTable(c ITable) {
 	fmt.Printf(" Type of %s : %s \n", c.getName(), c.getType())
 }
 
-func main() {
+func Demo() {
 	artFactory := NewFurnitureFactory("art")
 	artChair := artFactory.makeChair()
 	artTable := artFactory.makeTable()
